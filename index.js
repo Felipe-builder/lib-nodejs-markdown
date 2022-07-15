@@ -6,14 +6,30 @@ function trataErro(erro) {
 }
 
 
-function pegaArquivo(caminhoDoArquivo) {
+// 3º - Code
+async function pegaArquivo(caminhoDoArquivo) {
   const encoding = 'utf-8';
-  fs.promises
-    .readFile(caminhoDoArquivo, encoding)
-    .then((texto) => console.log(texto))
-    .catch((erro) => trataErro(erro))
+  try {
+    const texto = await fs.promises.readFile(caminhoDoArquivo, encoding)
+    console.log(chalk.green(texto))
+  } catch(erro) {
+    trataErro(erro)
+  } finally {
+    console.log(chalk.yellow('operação concluída'))
+  }
 }
 
+// 2º - Code
+// function pegaArquivo(caminhoDoArquivo) {
+//   const encoding = 'utf-8';
+//   fs.promises
+//     .readFile(caminhoDoArquivo, encoding)
+//     .then((texto) => console.log(texto))
+//     .catch((erro) => trataErro(erro))
+// }
+
+
+// 1º - Code
 // function pegaArquivo(caminhoDoArquivo) {
 //   const encoding = 'utf-8';
 //   fs.readFile(caminhoDoArquivo, encoding, (erro, data) => {
