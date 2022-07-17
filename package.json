@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cli": "node cli.js ./arquivos/texto1.md",
+    "cli": "node cli.js ./arquivos",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
