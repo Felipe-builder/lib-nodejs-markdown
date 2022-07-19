@@ -1,4 +1,6 @@
 const chalk = require('chalk');
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+
 const pegaArquivo = require('./index');
 
 const caminho = process.argv;
