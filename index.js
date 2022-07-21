@@ -31,7 +31,7 @@ async function pegaArquivo(caminhoDoArquivo) {
       
       return extraiLinks(texto)
     }))
-    return result
+    return result[0]
   } catch(erro) {
     return trataErro(erro)
   }
