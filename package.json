@@ -1,6 +1,6 @@
 {
   "name": "lib-markdown-study",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight lib for link detect links files within a folder. (Study of Alura)",
   "main": "./cli.js",
   "homepage": "https://github.com/Felipe-builder/lib-nodejs-markdown",
