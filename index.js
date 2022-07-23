@@ -46,6 +46,26 @@ async function pegaArquivo(caminhoDoArquivo) {
   // }
 }
 
+async function pegaArquivoTs(caminhoDoArquivo) {
+  const encoding = 'utf-8';
+  try {
+    const texto = await fs.promises.readFile(caminhoDoArquivo, encoding)
+    return extraiLinks(texto)
+  } catch(erro) {
+    return trataErro(erro)
+  }
+  // try {
+  //   const texto = await fs.promises.readFile(caminhoDoArquivo, encoding)
+  //   return extraiLinks(texto);
+
+  // } catch(erro) {
+  //   trataErro(erro)
+  // } finally {
+  //   console.log(chalk.yellow('operação concluída'))
+  // }
+}
+
+
 // 2º - Code
 // function pegaArquivo(caminhoDoArquivo) {
 //   const encoding = 'utf-8';
@@ -67,4 +87,4 @@ async function pegaArquivo(caminhoDoArquivo) {
 //   })
 // }
 
-module.exports = pegaArquivo;
+module.exports = {pegaArquivo, pegaArquivoTs};
