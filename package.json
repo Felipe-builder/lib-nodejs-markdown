@@ -1,14 +1,23 @@
 {
-  "name": "lib-markdown",
+  "name": "lib-markdown-study",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Lightweight lib for link detect links files within a folder. (Study of Alura)",
+  "main": "./cli.js",
+  "homepage": "https://github.com/Felipe-builder/lib-nodejs-markdown",
+  "bugs": {
+    "url": "https://github.com/dicksonmelo/lib-nodejs-markdown/issues",
+    "email": "felipevascon@gmail.com"
+  },
+  "bin": {
+    "links-at": "./cli.js"
+  },
+  "preferGlobal": true,
   "scripts": {
     "cli": "node cli.js ./arquivos/",
-    "test": "jest ./test --coverage"
+    "test": "jest ./test"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["URL", "link", "NodeJS", "markdown"],
+  "author": "Felipe Vasconcelos felipevascon@gmail.com",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",

@@ -18,5 +18,8 @@ describe('pegaArquivoTs::', () => {
     const result = await pegaArquivoTs('/home/felipe/workspace/alura/javascript/lib-nodejs-markdown/test/arquivos/arquivos1_semlinks.md')
     expect(result).toBe('não há links');
   })
+  it('Deve lançar um erro na falta de arquivo', async () => {
+    await expect(pegaArquivoTs('/home/felipe/workspace/alura/javascript/lib-nodejs-markdown/test/arquivos')).rejects.toThrow(/não há arquivo no caminho/)
+  })
 })
 
