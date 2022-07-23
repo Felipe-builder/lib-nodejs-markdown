@@ -5,7 +5,7 @@
   "main": "./cli.js",
   "homepage": "https://github.com/Felipe-builder/lib-nodejs-markdown",
   "bugs": {
-    "url": "https://github.com/dicksonmelo/lib-nodejs-markdown/issues",
+    "url": "https://github.com/Felipe-builder/lib-nodejs-markdown/issues",
     "email": "felipevascon@gmail.com"
   },
   "bin": {
